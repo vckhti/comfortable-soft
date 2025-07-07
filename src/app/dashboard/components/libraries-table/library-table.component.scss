@@ -1,0 +1,44 @@
+input, select {
+  border: 1px solid black;
+  border-radius: 2px;
+
+  &.ng-invalid.ng-touched,
+  &.ng-invalid.ng-dirty {
+    border-color: red;
+  }
+}
+
+button{
+  opacity: 0.9;
+}
+
+button:disabled {
+  opacity: 0.9 !important;
+  background-color: light-dark(rgba(239, 239, 239, 0.3), rgba(19, 1, 1, 0.3)) ;
+  color: light-dark(rgba(16, 16, 16, 0.3), rgba(255, 255, 255, 0.3)) ;
+  border-color: light-dark(rgba(118, 118, 118, 0.3), rgba(195, 195, 195, 0.3)) ;
+}
+table, th, td {
+  color: yellow;
+  border: 1px solid yellow;
+}
+
+.sort-button {
+  width: 100%;
+  min-height: 39px;
+  padding: 0;
+  margin: 0;
+}
+
+.content-wrapper {
+  min-height: 100vh;
+  background-image: url("/assets/jpg/milky-way.jpg");
+}
+
+::ng-deep .highlighted-text{
+  background-color: #efba5c !important;
+}
+
+tr:hover {
+  cursor: pointer;
+}

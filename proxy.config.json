@@ -1,0 +1,9 @@
+{
+  "/v1": {
+    "target": "https://apidata.mos.ru",
+    "secure": true,
+    "logLevel": "debug",
+    "changeOrigin": true
+  }
+}
+
