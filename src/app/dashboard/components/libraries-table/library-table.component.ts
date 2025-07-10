@@ -13,22 +13,23 @@ import {ItemDetailComponent} from "../item-detail/item-detail.component";
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LibraryTableComponent {
-  searchText: string='';
+  searchText: string = '';
   form = new FormGroup({
     library: new FormControl(null, [Validators.required]),
   });
   onDestroy$: Subject<boolean> = new Subject();
-  data: any[] = [];
+  data: any[] = []; // test commit
 
   constructor(
     public getPropertyPipe: GetPropertyPipe,
-
     private persistanceService: DashboardService,
     private dialogService: DialogService,
     private cdr: ChangeDetectorRef
-  ) {}
+  ) {
+  }
 
-  ngOnInit() {}
+  ngOnInit() {
+  }
 
   ngOnDestroy() {this.onDestroy$.next(true);}
 
